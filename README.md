@@ -20,7 +20,7 @@ Voici la structure final:
   \ - index.html                                <-- Votre contenu securiser
 ```
 
-## Htnl obligatoire:
+## Html obligatoire:
 ```
 <input id="password" type="password" placeholder="Mot de passe" /> <br />
 <button id="loginbutton" type="button">Enter</button>
