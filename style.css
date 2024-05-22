@@ -139,7 +139,9 @@ a {
 
 .login{
   display: flex;
+  height: 100vh;
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
+  justify-content: center;
 }
