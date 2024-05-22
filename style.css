@@ -141,5 +141,5 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-
+  align-content: center;
 }
