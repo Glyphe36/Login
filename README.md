@@ -6,7 +6,7 @@ La methode fonctionne aussi sur dorpbox ou sur AWS amazon s3
 ## Configuration
 
 0. Creation d'une page de connexion `index.html`.
-0. Charger la sur votre navigateur, puis entrer le mot de passe que vous desirer
+0. Charger la sur votre navigateur, puis entrer le mot de passe que vous desirer ici `j24qi32`
 0. Un message d'erreur vas s'afficher dans le placeholder, ainsi que des caractere dans l'url copier les apres #
 0. Cree un dossier avec ces caractere ex:`1a3c9560cc42ab96f5711bd7100abfd18a274892` puis cree un fichier`index.hml`. 
 0. Vous pouvez cree votre contenu dans ce `index.html` puis le charger sur votre github
