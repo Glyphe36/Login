@@ -16,7 +16,7 @@
             <div class="login">
                 <h1>Connexion</h1>
 				<input id="password" type="password" placeholder="Mot de passe" /> <br />
-				<button id="loginbutton" type="button">Enter</button>
+				<button id="loginbutton" type="button">Entrée</button>
 				<p id="wrongPassword" style="display: none">Mot de pass incorrect</p>
             </div>
         </div>
@@ -39,7 +39,7 @@
             error: function (xhr, ajaxOptions, thrownError) {
                 parent.location.hash = hash;
                 //$("#wrongPassword").show();
-                $("#password").attr("placeholder", "wrong password");
+                $("#password").attr("placeholder", "mot de passe incorrect");
                 $("#password").val("");
             }
         });
