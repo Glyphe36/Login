@@ -30,10 +30,6 @@
     padding: 0 20px;
     box-sizing: border-box; 
 }
-.row{
-
-}
-
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
@@ -76,10 +72,6 @@ button:hover{
   color: #333;
   border-color: #888;
   outline: 0; 
-}
-
-iframe{
-
 }
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
