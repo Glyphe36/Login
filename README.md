@@ -67,16 +67,16 @@ html:
 
 ## Description du script:
 
-0.`use strict` indique au navigateur web d'utiliser le mode "strict" pour interpréter le code JavaScript, ce qui permet de détecter les erreurs de syntaxe et de sémantique plus facilement.
-0.La fonction `loadPage(pwd)` est appelée lorsque l'utilisateur soumet le formulaire de connexion. Elle prend le mot de passe saisi par l'utilisateur en tant que paramètre pwd.
-0.Dans la fonction `loadPage(pwd)`, le mot de passe est d'abord haché en utilisant la fonction `Sha1.hash(pwd)` pour obtenir une chaîne de caractères hashée.
-0.Ensuite, la chaîne de caractères hashée est utilisée pour construire l'URL de la page d'accueil en ajoutant /index.html à la fin.
-0.La fonction `$.ajax({...})` est utilisée pour envoyer une requête HTTP GET à l'URL de la page d'accueil construite précédemment.
-0.Si la requête HTTP GET réussit, la fonction `success(data)` est appelée et la page d'accueil est chargée en utilisant `window.location = url;`.
-0.Si la requête HTTP GET échoue (par exemple, si le mot de passe saisi est incorrect), la fonction `error(xhr, ajaxOptions, thrownError)` est appelée et l'attribut placeholder de l'élément input du mot de passe est mis à jour pour afficher `"wrong password"` (mot de passe incorrect). L'élément input du mot de passe est également vidé en utilisant `$("#password").val("");`.
-0.En dehors de la fonction `loadPage(pwd)`, l'événement click de l'élément button avec l'ID loginbutton est géré en utilisant `$("#loginbutton").on("click", function () {...});`. Lorsque l'utilisateur clique sur le bouton "Se connecter", la fonction `loadPage($("#password").val());` est appelée pour soumettre le formulaire de connexion.
-0.L'événement keypress de l'élément input du mot de passe est également géré en utilisant `$("#password").keypress(function (e) {...});`. Lorsque l'utilisateur appuie sur la touche "Entrée" dans le champ du mot de passe, la fonction `loadPage($("#password").val());` est appelée pour soumettre le formulaire de connexion.
-0.Enfin, l'élément input du mot de passe est mis en focus en utilisant `$("#password").focus();` pour que l'utilisateur puisse saisir son mot de passe plus facilement.
+0. `use strict` indique au navigateur web d'utiliser le mode "strict" pour interpréter le code JavaScript, ce qui permet de détecter les erreurs de syntaxe et de sémantique plus facilement.
+0. La fonction `loadPage(pwd)` est appelée lorsque l'utilisateur soumet le formulaire de connexion. Elle prend le mot de passe saisi par l'utilisateur en tant que paramètre pwd.
+0. Dans la fonction `loadPage(pwd)`, le mot de passe est d'abord haché en utilisant la fonction `Sha1.hash(pwd)` pour obtenir une chaîne de caractères hashée.
+0. Ensuite, la chaîne de caractères hashée est utilisée pour construire l'URL de la page d'accueil en ajoutant /index.html à la fin.
+0. La fonction `$.ajax({...})` est utilisée pour envoyer une requête HTTP GET à l'URL de la page d'accueil construite précédemment.
+0. Si la requête HTTP GET réussit, la fonction `success(data)` est appelée et la page d'accueil est chargée en utilisant `window.location = url;`.
+0. Si la requête HTTP GET échoue (par exemple, si le mot de passe saisi est incorrect), la fonction `error(xhr, ajaxOptions, thrownError)` est appelée et l'attribut placeholder de l'élément input du mot de passe est mis à jour pour afficher `"wrong password"` (mot de passe incorrect). L'élément input du mot de passe est également vidé en utilisant `$("#password").val("");`.
+0. En dehors de la fonction `loadPage(pwd)`, l'événement click de l'élément button avec l'ID loginbutton est géré en utilisant `$("#loginbutton").on("click", function () {...});`. Lorsque l'utilisateur clique sur le bouton "Se connecter", la fonction `loadPage($("#password").val());` est appelée pour soumettre le formulaire de connexion.
+0. L'événement keypress de l'élément input du mot de passe est également géré en utilisant `$("#password").keypress(function (e) {...});`. Lorsque l'utilisateur appuie sur la touche "Entrée" dans le champ du mot de passe, la fonction `loadPage($("#password").val());` est appelée pour soumettre le formulaire de connexion.
+0. Enfin, l'élément input du mot de passe est mis en focus en utilisant `$("#password").focus();` pour que l'utilisateur puisse saisir son mot de passe plus facilement.
 
 ## Securiter
 
